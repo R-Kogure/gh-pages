@@ -1,58 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0b0f">
 <title>Kog's Pages</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+<link rel="preload" href="assets/css/styles.css" as="style">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./">
+      <span class="title">Kog's page</span>
+      <span class="badge">Portfolio</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="btn" href="https://github.com/R-Kogure" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://atcoder.jp/users/koggle" target="_blank" rel="noopener">AtCoder</a>
+      <a class="btn" href="http://xan.xii.jp/profile/537.html" target="_blank" rel="noopener">Typing</a>
+      <a class="btn" href="https://connpass.com/user/Love_meet_/" target="_blank" rel="noopener">Connpass</a>
+      <a class="btn accent" href="data/competition/competition.html">Pastime</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <h1>Kog's page</h1>
-</p>
-  <h2>About me</h2>
-  
-  <p>
-  小暮です．
-  <br>
-  関心領域はコンピュータビジョン，データオーグメンテーションです．
-    <br>
-  </p>
+  <section class="container hero">
+    <h1>Kog's page</h1>
+    <p class="muted">コンピュータビジョン / データオーグメンテーション</p>
+  </section>
 
-  <p>
-  <a href="https://github.com/R-Kogure"><button style="background-color:black">GitHub</button></a>
-  <a href="https://atcoder.jp/users/koggle"><button style="background-color:black">AtCoder</button></a>
-  <a href="http://xan.xii.jp/profile/537.html"><button style="background-color:black">Typing</button></a>
-  <a href="https://connpass.com/user/Love_meet_/"><button style="background-color:black">Connpass</button></a>
-  <a href="data/competition/competition.html"><button style="background-color:black">Pastime</button></a>
-  </p>
-  
-  <h2>Certificate</h2>
-  <li> <a href="data/CS/cert-stat2.pdf" target="_blank"> 統計検定2級 優秀成績賞</a>
-      <p> 2022.7.2  </p>
-  <li> <a href="data/CS/cert-literacy-datascience.pdf" target="_blank"> データサイエンスリテラシー</a>
-      <p> 2021.8.31 The Open University of Japan </p>
-  <li> <a href="data/CS/cert-Basic-CS.pdf" target="_blank"> 計算機科学の基礎</a>
-      <p> 2021.8.31 The Open University of Japan </p>
-  <li> <a href="data/CS/cert-DS.pdf" target="_blank"> データサイエンス</a>
-      <p> 2021.2.28 The Open University of Japan </p>
-  <li> <a href="data/CS/cert-socialmath.pdf" target="_blank"> 数学と社会</a>
-      <p> 2021.2.28 The Open University of Japan </p>
-  <li> <a href="https://coursera.org/share/cfc6cef050c77dce6e2a2116cb4f698d"> Data Science Math Skills </a>
-      <p> 2020.5.9 Duke University </p>
-  <li> <a href="https://coursera.org/share/46cb28aca3fc03ee43f8d1f802994fec"> Python Basics</a>
-      <p> 2020.1.13 University of Michigan </p>
-  
-  
-  <h2>Education</h2>
-  <p>
-  <h4>・放送大学教養学部情報コース (2020/04〜2024/03)</h4>
-  </p>
-  <p>
-  <h4>・近畿大学経済学部国際経済学科 (2019/04〜2020/03)</h4>
-  </p>
+  <section class="container section">
+    <div class="card">
+      <h2>About me</h2>
+      <p>現在はSaaSのWeb開発に携わり、RAG（Retrieval-Augmented Generation）サービスの開発を担当しています。AIエージェント開発の知見とAzure関連リソースの基礎知識があります。大学時代はコンピュータビジョンやデータオーグメンテーションに注力していましたが、近年は自然言語処理、AIエージェント、プロンプトエンジニアリングに関心を広げています。オフは水泳と散歩でリフレッシュしています。</p>
+    </div>
+  </section>
 
+  <section class="container section">
+    <div class="card">
+      <h2>Certificate</h2>
+      <ul class="cert-list">
+        <li class="cert-item">
+          <a href="data/CS/cert-stat2.pdf" target="_blank" rel="noopener">統計検定2級 優秀成績賞</a>
+          <span class="cert-meta">2022.7.2</span>
+        </li>
+        <li class="cert-item">
+          <a href="data/CS/cert-literacy-datascience.pdf" target="_blank" rel="noopener">データサイエンスリテラシー</a>
+          <span class="cert-meta">2021.8.31 The Open University of Japan</span>
+        </li>
+        <li class="cert-item">
+          <a href="data/CS/cert-Basic-CS.pdf" target="_blank" rel="noopener">計算機科学の基礎</a>
+          <span class="cert-meta">2021.8.31 The Open University of Japan</span>
+        </li>
+        <li class="cert-item">
+          <a href="data/CS/cert-DS.pdf" target="_blank" rel="noopener">データサイエンス</a>
+          <span class="cert-meta">2021.2.28 The Open University of Japan</span>
+        </li>
+        <li class="cert-item">
+          <a href="data/CS/cert-socialmath.pdf" target="_blank" rel="noopener">数学と社会</a>
+          <span class="cert-meta">2021.2.28 The Open University of Japan</span>
+        </li>
+        <li class="cert-item">
+          <a href="https://coursera.org/share/cfc6cef050c77dce6e2a2116cb4f698d" target="_blank" rel="noopener">Data Science Math Skills</a>
+          <span class="cert-meta">2020.5.9 Duke University</span>
+        </li>
+        <li class="cert-item">
+          <a href="https://coursera.org/share/46cb28aca3fc03ee43f8d1f802994fec" target="_blank" rel="noopener">Python Basics</a>
+          <span class="cert-meta">2020.1.13 University of Michigan</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="card">
+      <h2>Education</h2>
+      <h3>放送大学教養学部情報コース</h3>
+      <p class="muted">2020/04〜2024/03</p>
+      <h3>近畿大学経済学部国際経済学科</h3>
+      <p class="muted">2019/04〜2020/03</p>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="muted">© 2025 Kog. Built on GitHub Pages.</p>
+  </div>
+</footer>
 
 <script>
 console.log('GitHub Pages');
